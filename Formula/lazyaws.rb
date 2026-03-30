@@ -5,21 +5,21 @@
 class Lazyaws < Formula
   desc "Terminal UI for browsing AWS resources"
   homepage "https://github.com/bkneis/lazyaws"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.4/lazyaws_0.0.4_darwin_amd64.tar.gz"
-      sha256 "9c0dbd406ce8dc7c48d37ed98033c87cd33a84e99c50f8fa0438633d03286d7f"
+      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.5/lazyaws_0.0.5_darwin_amd64.tar.gz"
+      sha256 "6ef35a02623b85e7ab6660f76ac8c7a97a262bd1295cd8554a0aae87a1df3fde"
 
       define_method(:install) do
         bin.install "lazyaws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.4/lazyaws_0.0.4_darwin_arm64.tar.gz"
-      sha256 "978088b5ec1e006457caa5b0460c8f2a8e0bf876b7b63421c9b40a6c828a84c7"
+      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.5/lazyaws_0.0.5_darwin_arm64.tar.gz"
+      sha256 "852bfe73466f42cef05f2ca5f16a847ade216e9bbeb9dcebb7a2ca4573869061"
 
       define_method(:install) do
         bin.install "lazyaws"
@@ -29,15 +29,15 @@ class Lazyaws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.4/lazyaws_0.0.4_linux_amd64.tar.gz"
-      sha256 "6dc0f21855d8fbd70700ee1e8dcbddba3a9090023b34bfa1797e9d647e1c29bf"
+      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.5/lazyaws_0.0.5_linux_amd64.tar.gz"
+      sha256 "e4adb0cd44556f83411f02f72d51ba5822f7579b06ad72a7f0032cee4fa97238"
       define_method(:install) do
         bin.install "lazyaws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.4/lazyaws_0.0.4_linux_arm64.tar.gz"
-      sha256 "49eb4d380d7ebfe81cd04a0b00d78f58ade2b9e903e1815157d3e50977917c7a"
+      url "https://github.com/bkneis/lazyaws/releases/download/v0.0.5/lazyaws_0.0.5_linux_arm64.tar.gz"
+      sha256 "95bb6dae952dfa8cf29f7450e620261feec2ebdc24bda3a2ef60d829060cb203"
       define_method(:install) do
         bin.install "lazyaws"
       end
